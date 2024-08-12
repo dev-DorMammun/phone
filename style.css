@@ -10,8 +10,8 @@ body {
     align-items: center;
 }
 .phone-outside {
-    height: 75vh;
-    width: 39.5vh;
+    height: 85vh;
+    width: 38vh;
     background-color: white;
     border-radius: 50px;
     padding: 10px;
@@ -63,27 +63,29 @@ body {
     font-size: 14px;
 }
 .text {
-   font-size: 12px;
+   font-size: 10px;
    color: #E18AFE; 
 }
 .chat {
-    padding-top: 1.5vh;
     display: flex;
     flex-direction: column;
-    gap: 1.5vh;
+    gap: 1vh;
+    padding: 1vh;
+    height: 80%;
+    justify-content: space-evenly;
 }
 .sender {
     background-color: #EDE5F4;
     color: #AE8BC2;
-    width: 60%;
-    font-size: 12px;
+    width: 70%;
+    font-size: 10px;
     border-radius: 10px 10px 10px 0;
-    padding: 1.5vh;
+    padding: 1vh;
 }
 .images {
     display: flex;
     justify-content: right;
-    gap: 1.5vh;
+    gap: 1vh;
 }
 .dog {
     width: 9vh;
@@ -93,21 +95,88 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 1.5vh;
+    gap: 1vh;
 }
 .receiver {
     background-color: white;
     color: rgb(100, 100, 100);
-    font-size: 12px;
-    width: 60%;
-    font-size: 12px;
+    font-size: 10px;
+    width: 70%;
     border-radius: 10px 10px 0px 10px;
-    padding: 1.5vh;
+    padding: 1vh;
     box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.pay-card {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #D84EEF, #873DF4);
+    padding: 1vh;
+    border-radius: 20px 20px 20px 0;
+}
+.pay-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5vh;
+}
+.pay-card .text {
+    color: #EFD0FD;
+}
+.circle {
+    height: 3vh;
+    width: 3vh;
+    border-radius: 3vh;
+    background-color: #E18AFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.amount {
+    display: flex;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 30px 30px;
+    height: 10%;
+    margin: 1.5vh;
+    background-color: white;
+    padding: 0 2vh;
+    width: 30vh;
+}
+.message .text {
+    color:rgb(105, 105, 105)
+}
+.icon {
+    height: 2.5vh;
+    width: 2.5vh;
+}
+.send-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    width: 4vh;
+    border-radius: 4vh;
+    background-color: #3B234F;
 }
 
 @media screen and (max-width: 576px) {
     .all-container {
-        padding: 10vw;
+        padding: 0 1vw;
+    }
+    .sender, .receiver, .text {
+        font-size: 70%;
     }
 }
